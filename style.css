@@ -34,7 +34,7 @@
   /* SPACING */
   --spacing1400: 7rem; /* 112px */
   --spacing1000: 5rem; /* 80px */
-  --spacing900: 4.7rem; /* 72px */
+  --spacing900: 4.5rem; /* 72px */
   --spacing800: 4rem; /* 64px */
   --spacing700: 3.5rem; /* 56px */
   --spacing500: 2.5rem; /* 40px */
@@ -58,6 +58,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1{
+  margin: 0;
 }
 
 .text-preset-1 {
@@ -96,16 +100,10 @@
   width: max-content;
   height: 56px;
   border-radius: 29px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: var(--spacing200) var(--spacing500);
   border: none;
   transition: background-color 0.5s ease;
 
-  & :where(span:nth-child(2)) {
-    padding-left: 5px;
-  }
   & :hover {
     cursor: pointer;
   }
@@ -210,6 +208,7 @@ section {
     }
     & button:first-child:hover {
       background-color: #71c0d4;
+      cursor: pointer;
     }
 
     & button:last-child {
@@ -217,6 +216,7 @@ section {
     }
     & button:last-child:hover {
       background-color: #b18bdd;
+      cursor: pointer;
     }
   }
 }
@@ -231,23 +231,24 @@ main {
     & .image-collage img {
       width: 100%;
       border-radius: 8px;
+      min-height: 144px;
     }
 
     & .image-collage {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: auto auto;
       gap: 16px;
     }
 
     & .text-content {
       text-align: center;
-
+      justify-items: center;
       & :first-child {
         margin-block-end: 1rem;
       }
       & :nth-child(2) {
         margin-block-end: 2rem;
+        max-width: 445px;
       }
     }
   }
@@ -287,6 +288,7 @@ footer {
       }
       & button:hover {
         background-color: #b18bdd;
+        cursor: pointer;
       }
     }
   }
@@ -294,10 +296,17 @@ footer {
 
 @media (min-width: 768px) {
   :root {
-    --font-size-sm: clamp(1rem, 1.2vw + 0.5rem, 1.125rem); /* 16px - 18px */
-    --font-size-md: clamp(0.875rem, 1vw + 0.5rem, 1rem); /* 14px - 16px */
+    --font-size-sm: 1rem; /* 16px - 18px */
+    --font-size-md: 0.875rem; /* 14px - 16px */
     --font-size-lg: clamp(2.25rem, 2.5vw + 0.5rem, 2.25rem); /* 36px - 40px */
     --font-size-xl: clamp(3rem, 3.5vw + 0.5rem, 3rem); /* 48px - 64px */
+  }
+  section{
+    gap: 72px;
+    & .text-content{
+      padding: 0;
+      padding-block-end: var(--spacing800);
+    }
   }
   .combined-img {
     height: 303px;
@@ -310,7 +319,11 @@ footer {
     }
   }
   main {
+    padding: var(--spacing700) var(--spacing400) var(--spacing800);
     .main-content {
+      & .image-collage img {
+        height: 160px;
+      }
       & .image-collage {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
@@ -340,17 +353,19 @@ footer {
   :root {
     --font-size-xs: clamp(1rem, 1.2vw + 0.5rem, 1rem); /* 16px */
     --font-size-sm: clamp(1.125rem, 1.5vw + 0.5rem, 1.125rem); /* 18px */
-    --font-size-md: clamp(1rem, 1.2vw + 0.5rem, 1rem); /* 16px */
+    --font-size-md: 1rem; /* 16px */
     --font-size-lg: clamp(2.5rem, 2.5vw + 0.5rem, 2.5rem); /* 40px */
     --font-size-xl: clamp(4rem, 4vw + 0.5rem, 4rem); /* 64px */
   }
 
   section {
+    padding-block-end: var(--spacing800);
     overflow: hidden;
     & .combined-img {
       display: none;
     }
     & .text-content {
+      height: 360px;
       padding: 0;
     }
   }
@@ -367,7 +382,7 @@ footer {
     top: 50%;
     transform: translateY(-50%);
     width: 700px; /* Ancho de la imagen */
-    height: 380px; /* Alto de la imagen */
+    height: 360px; /* Alto de la imagen */
     background-position: center;
   }
 
@@ -389,6 +404,10 @@ footer {
       width: 1120px;
       margin: 0 auto;
 
+      & .image-collage img {
+        height: 256px;
+      }
+
       & .text-content {
         width: 544px;
       }
@@ -407,6 +426,16 @@ footer {
       & .content {
         width: 1120px;
         flex-direction: row;
+
+        & h3{
+          flex-basis: 445px
+        }
+        & p{
+          flex-basis: 355px;
+        }
+        & button {
+          margin-inline-start: 63px;
+        }
       }
       & .content :is(h3, p) {
         text-align: left;
