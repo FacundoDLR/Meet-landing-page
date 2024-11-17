@@ -2,11 +2,11 @@
 
 ## Welcome! 👋
 
-Hi stranger, <!-- thanks for checking out my --> sorry but I´m still working on the solution for this front-end coding challenge. In a few days a will publish it.
+Hi stranger, thanks for checking out my solution for this front-end coding challenge.
 
-<!-- This is my solution to the [Meet landing page]().
+This is my solution to the [Meet landing page](https://www.frontendmentor.io/profile/FacundoDLR/solutions).
 
-![Design preview for the Meet landing page coding challenge](./preview.jpg)
+![Design preview for the Meet landing page coding challenge](https://meet-landing-page-nu.vercel.app/preview.jpg)
 
 ## 📝 Table of contents
 
@@ -22,7 +22,7 @@ Hi stranger, <!-- thanks for checking out my --> sorry but I´m still working on
 
 ### The challenge
 
-Your challenge is to build out this landing page and get it looking as close to the design as possible.
+This challenge is to build out this landing page and get it looking as close to the design as possible.
 
 The users should be able to:
 
@@ -31,32 +31,38 @@ The users should be able to:
 
 ### 📸 Screenshot
 
-**PC Screenshot**
+**PC Screenshot (1440x900)**
 
-<img src="" width="1280" height="auto">
+<img src="https://meet-landing-page-nu.vercel.app/assets/screenshots/MacBook Pro-1731799193145.jpeg" width="1280" height="auto">
 
-**Tablet Screenshot**
+**Tablet Screenshot (768x1024)**
 
-<img src="" width="720" height="auto">
+<img src="https://meet-landing-page-nu.vercel.app/assets/screenshots/iPad-1731799205170.jpeg" width="720" height="auto">
 
-**Mobile Screenshot**
+**Mobile Screenshot (375x667)**
 
-<img src="" width="400" height="auto">
+<img src="https://meet-landing-page-nu.vercel.app/assets/screenshots/iPhone 6-7-8-1731799170731.jpeg" width="400" height="auto">
 
 ### 📎 Links
 
-- View code URL: [Github Repo]()
-- Live Site URL: [Live Demo]()
+- View code URL: [Github Repo](https://github.com/FacundoDLR/Meet-landing-page.git)
+- Live Site URL: [Live Demo](https://meet-landing-page-nu.vercel.app/)
 
 ## My process
 
 ### Built with
 
-
-### 💡 Useful resources -->
-
+- HTML 🧱
+- Advanced CSS (Pseudo classes/elements & combinators)🎨
+- Flexbox ⚒️
+- Grid ⚒️
+- Responsive Design
+- SEO 🌍
+- Mobile First 📱
+- NEW media query ranges syntax
+- Conventional commits (git) 📜
 
 ## 🤩 Author
 
 - GitHub - [FacundoDLR](https://github.com/FacundoDLR)
-- Frontend Mentor - [@FacundoDLR](https://www.frontendmentor.io/profile/FacundoDLR)# Meet-landing-page
+- Frontend Mentor - [@FacundoDLR](https://www.frontendmentor.io/profile/FacundoDLR) #Meet-landing-page
