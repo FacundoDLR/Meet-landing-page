@@ -1,10 +1,9 @@
-# Frontend Mentor - Testimonials grid section
-
+# Frontend Mentor - Meet landing page solution
 ## Welcome! 👋
 
 Hi stranger, thanks for checking out my solution for this front-end coding challenge.
 
-This is my solution to the [Meet landing page](https://www.frontendmentor.io/profile/FacundoDLR/solutions).
+This is my solution to the [Meet landing page](https://www.frontendmentor.io/solutions/meet-landing-page-791w1gx-zr).
 
 ![Design preview for the Meet landing page coding challenge](https://meet-landing-page-nu.vercel.app/preview.jpg)
 

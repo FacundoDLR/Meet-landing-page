@@ -97,7 +97,7 @@ h1 {
 }
 
 .button {
-  width: max-content;
+  min-width: max-content;
   height: 56px;
   border-radius: 29px;
   padding: var(--spacing200) var(--spacing500);
@@ -392,7 +392,7 @@ footer {
     padding: var(--spacing700) var(--spacing1000) var(--spacing900);
 
     & .main-content {
-      width: 1120px;
+      max-width: 1120px;
       margin: 0 auto;
 
       & .image-collage img {
