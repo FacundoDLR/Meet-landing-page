@@ -373,8 +373,8 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    max-width: 43.75rem; /* Ancho de la imagen */
-    max-height: 22.5rem; /* Alto de la imagen */
+    width: 43.75rem; /* Ancho de la imagen */
+    height: 22.5rem; /* Alto de la imagen */
     background-position: center;
   }
   .centered-box::before {
