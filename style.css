@@ -98,8 +98,8 @@ h1 {
 
 .button {
   min-width: max-content;
-  height: 56px;
-  border-radius: 29px;
+  min-height: 3.5rem;
+  border-radius: 1.8125rem;
   padding: var(--spacing200) var(--spacing500);
   border: none;
   transition: background-color 0.5s ease;
@@ -119,8 +119,8 @@ h1 {
 
 /* Línea vertical */
 .line {
-  width: var(--border-thickness);
-  height: var(--line-height);
+  min-width: var(--border-thickness);
+  min-height: var(--line-height);
   background-color: var(--circle-color);
   margin-bottom: var(
     --border-thickness
@@ -129,8 +129,8 @@ h1 {
 
 /* Círculo */
 .circle {
-  width: var(--circle-size);
-  height: var(--circle-size);
+  min-width: var(--circle-size);
+  min-height: var(--circle-size);
   border: var(--border-thickness) solid var(--circle-color);
   border-radius: 50%;
   display: flex;
@@ -152,7 +152,7 @@ body {
   background-color: var(--White);
 }
 nav {
-  min-height: 76px;
+  min-height: 4.75rem;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -160,10 +160,10 @@ nav {
 section {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 3rem;
   padding-block-start: var(--spacing800);
   & .combined-img {
-    min-height: 160px;
+    min-height: 10rem;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -219,18 +219,18 @@ main {
   & .main-content {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: 4rem;
 
     & .image-collage img {
       width: 100%;
-      border-radius: 8px;
-      min-height: 144px;
+      border-radius: 0.5rem;
+      min-height: 9rem;
     }
 
     & .image-collage {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
+      gap: 1rem;
     }
 
     & .text-content {
@@ -241,7 +241,7 @@ main {
       }
       & :nth-child(2) {
         margin-block-end: 2rem;
-        max-width: 445px;
+        max-width: 27.8125rem;
       }
     }
   }
@@ -249,10 +249,10 @@ main {
 
 footer {
   & .number-container {
-    height: calc(136px - var(--circle-size) / 2);
+    max-height: calc(8.5rem - var(--circle-size) / 2);
   }
   & .hero {
-    height: 374px;
+    max-height: 23.375rem;
     background-repeat: no-repeat;
     background-position: center;
     padding: var(--spacing800) var(--spacing400);
@@ -295,17 +295,17 @@ footer {
     --font-size-xl: clamp(3rem, 3.5vw + 0.5rem, 3rem); /* 48px - 64px */
   }
   section {
-    gap: 72px;
+    gap: 4.5rem;
     & .text-content {
       padding: 0;
       padding-block-end: var(--spacing800);
     }
   }
   .combined-img {
-    height: 303px;
+    max-height: 18.9375rem;
   }
   .text-content {
-    width: 448px;
+    max-width: 28rem;
     margin: 0 auto;
     & .btn-container {
       flex-direction: row;
@@ -315,20 +315,20 @@ footer {
     padding: var(--spacing700) var(--spacing400) var(--spacing800);
     .main-content {
       & .image-collage img {
-        height: 160px;
+        max-height: 10rem;
       }
       & .image-collage {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
       }
       & .text-content {
-        width: 504px;
+        max-width: 31.5rem;
       }
     }
   }
   footer {
     & .hero {
-      height: 320px;
+      max-height: 20rem;
       background-image: linear-gradient(
           hsl(192, 37%, 48%, 0.85),
           hsla(192, 37%, 48%, 0.85)
@@ -336,7 +336,7 @@ footer {
         url("/assets/tablet/image-footer.jpg");
     }
     & .content {
-      width: 504px;
+      max-width: 31.5rem;
       margin: 0 auto;
     }
   }
@@ -358,7 +358,7 @@ footer {
       display: none;
     }
     & .text-content {
-      height: 360px;
+      max-height: 22.5rem;
       padding: 0;
     }
   }
@@ -373,8 +373,8 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 700px; /* Ancho de la imagen */
-    height: 360px; /* Alto de la imagen */
+    max-width: 43.75rem; /* Ancho de la imagen */
+    max-height: 22.5rem; /* Alto de la imagen */
     background-position: center;
   }
   .centered-box::before {
@@ -392,22 +392,22 @@ footer {
     padding: var(--spacing700) var(--spacing1000) var(--spacing900);
 
     & .main-content {
-      max-width: 1120px;
+      max-width: 70rem;
       margin: 0 auto;
 
       & .image-collage img {
-        height: 256px;
+        max-height: 16rem;
       }
 
       & .text-content {
-        width: 544px;
+        max-width: 34rem;
       }
     }
   }
 
   footer {
     & .hero {
-      height: 312px;
+      max-height: 19.5rem;
       display: flex;
       background-image: linear-gradient(
           hsl(192, 37%, 48%, 0.85),
@@ -415,17 +415,17 @@ footer {
         ),
         url("/assets/desktop/image-footer.jpg");
       & .content {
-        width: 1120px;
+        max-width: 70rem;
         flex-direction: row;
 
         & h3 {
           flex-basis: 445px;
         }
         & p {
-          flex-basis: 355px;
+          flex-basis: 22.187rem;
         }
         & button {
-          margin-inline-start: 63px;
+          margin-inline-start: 3.9375rem;
         }
       }
       & .content :is(h3, p) {
